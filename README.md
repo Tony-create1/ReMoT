@@ -15,17 +15,17 @@ This repository provides the **dataset**, **model**, and **evaluation code** acc
 
 ### Motivation
 
-![image-20260708175107544](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20260708175107544.png)
+![image-20260708175107544](images/motivation.png)
 
 ### Overview of the Triplet Motion Contrasts pipeline
 
-![59de6c06-805e-45db-93d2-6046bb1f7836](D:\wechat_files\xwechat_files\wxid_sfmm5vt3c1th22_35b2\temp\InputTemp\59de6c06-805e-45db-93d2-6046bb1f7836.png)
+![59de6c06-805e-45db-93d2-6046bb1f7836](images/pipeline.png)
 
 ### Benchmarks
 
-![feaf9c6a-bad7-4dd2-9245-475643140809](D:\wechat_files\xwechat_files\wxid_sfmm5vt3c1th22_35b2\temp\InputTemp\feaf9c6a-bad7-4dd2-9245-475643140809.png)
+![feaf9c6a-bad7-4dd2-9245-475643140809](images/benchmark1.png)
 
-![3b964ada-65e3-4883-b995-cd0ca5320e18](D:\wechat_files\xwechat_files\wxid_sfmm5vt3c1th22_35b2\temp\InputTemp\3b964ada-65e3-4883-b995-cd0ca5320e18.png)
+![3b964ada-65e3-4883-b995-cd0ca5320e18](images/benchmark2.png)
 
 ## 📊 Dataset Description
 
