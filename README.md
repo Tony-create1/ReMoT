@@ -11,8 +11,21 @@ This repository provides the **dataset**, **model**, and **evaluation code** acc
 
 ------
 
+## Overview
 
+### Motivation
 
+![image-20260708175107544](C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20260708175107544.png)
+
+### Overview of the Triplet Motion Contrasts pipeline
+
+![59de6c06-805e-45db-93d2-6046bb1f7836](D:\wechat_files\xwechat_files\wxid_sfmm5vt3c1th22_35b2\temp\InputTemp\59de6c06-805e-45db-93d2-6046bb1f7836.png)
+
+### Benchmarks
+
+![feaf9c6a-bad7-4dd2-9245-475643140809](D:\wechat_files\xwechat_files\wxid_sfmm5vt3c1th22_35b2\temp\InputTemp\feaf9c6a-bad7-4dd2-9245-475643140809.png)
+
+![3b964ada-65e3-4883-b995-cd0ca5320e18](D:\wechat_files\xwechat_files\wxid_sfmm5vt3c1th22_35b2\temp\InputTemp\3b964ada-65e3-4883-b995-cd0ca5320e18.png)
 
 ## 📊 Dataset Description
 
@@ -117,9 +130,9 @@ Use `summary.py` to generate evaluation reports:
 python eval_codes/summary.py
 ```
 
-## ⚙️ Parameter Description
+### ⚙️ Parameter Description
 
-### index_eval.py Parameters
+#### index_eval.py Parameters
 
 | Parameter | Type | Required | Description |
 |------|------|------|------|
@@ -130,7 +143,7 @@ python eval_codes/summary.py
 | `--max-new-tokens` | int | ❌ | Maximum number of generated tokens, default 128 |
 | `--num-gpus` | int | ❌ | Number of GPUs, default 8 |
 
-### infer_remot_bench.py Configuration
+#### infer_remot_bench.py Configuration
 
 Modify the following configurations at the beginning of the script:
 
@@ -144,7 +157,7 @@ Modify the following configurations at the beginning of the script:
 | `MAX_NEW_TOKENS` | Maximum number of generated tokens |
 | `NUM_GPUS` | Number of GPUs |
 
-### summary.py Configuration
+#### summary.py Configuration
 
 | Configuration | Description |
 |--------|------|
@@ -154,9 +167,9 @@ Modify the following configurations at the beginning of the script:
 | `MODEL_NAME` | Model name (for matching result files) |
 | `TASK_NAMES` | Task list `["agibot", "generaldata", "scannet"]` |
 
-## 📈 Evaluation Metrics
+### 📈 Evaluation Metrics
 
-### Metric Descriptions
+#### Metric Descriptions
 
 | Metric | Description |
 |------|------|
@@ -164,23 +177,24 @@ Modify the following configurations at the beginning of the script:
 | **Per-Char Match (Par)** | Character-level match accuracy, calculates correct ratio at each position |
 | **Avg Response Words** | Average number of response words |
 
-### Dataset-Specific Metrics
+#### Dataset-Specific Metrics
 
-#### AGIBOT
+##### AGIBOT
 - **Gripper-Move**: Gripper movement tasks (move_lr + lift_lower)
 - **Gripper-State**: Gripper state tasks (grab_release)
 - **Composite**: Composite tasks (move_complex)
 
-#### ScanNet
+##### ScanNet
+
 - **Camera Ov**: Camera viewpoint exact match (average of partial matches across viewpoints)
 - **Camera Par**: Camera viewpoint character-level match
 
-#### GeneralData
+##### GeneralData
 - **Rel-Pos**: Relative position tasks (mm class)
 - **Grounding**: Object detection tasks (om class)
 - **Counting**: Counting tasks (vl class)
 
-## 🔄 Resume from Checkpoint
+### 🔄 Resume from Checkpoint
 
 The evaluation script supports resuming from checkpoint:
 
@@ -188,9 +202,9 @@ The evaluation script supports resuming from checkpoint:
 2. When rerunning, specify the previous output file using the `--check` parameter
 3. The script automatically skips processed data and continues from the checkpoint
 
-## 📝 Output Format
+### 📝 Output Format
 
-### Inference Results (JSONL)
+#### Inference Results (JSONL)
 
 ```json
 {
@@ -205,7 +219,7 @@ The evaluation script supports resuming from checkpoint:
 }
 ```
 
-### Summary Report (Excel)
+#### Summary Report (Excel)
 
 The generated Excel file contains two worksheets:
 
@@ -214,7 +228,7 @@ The generated Excel file contains two worksheets:
 | `Summary_Indicators` | Core metric summary for each task (Sheet1) |
 | `Detailed_Metrics` | Detailed classification accuracy |
 
-## 📖 Usage Workflow
+### 📖 Usage Workflow
 
 - Prepare model → Download or train a vision-language model
 - Run batch evaluation → python infer_remot_bench.py
