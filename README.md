@@ -1,6 +1,17 @@
-# CVPR2026 Dataset and Evaluation Code
+# ReMoT: Reinforcement Learning with Motion Contrast Triplets
 
-This project contains the dataset and evaluation code for the CVPR2026 paper, supporting multi-GPU parallel inference and result aggregation analysis.
+This repository provides the **dataset**, **model**, and **evaluation code** accompanying our paper:
+
+> **"[[ReMoT: Reinforcement Learning with Motion Contrast Triplets\]](https://arxiv.org/abs/2603.00461)"**
+>  *Accepted as a Highlight Paper at CVPR 2026*
+
+- 🔗 **Paper:** [arXiv:2603.00461](https://arxiv.org/abs/2603.00461)
+- 🤖 **Model:** [ReMoT_model on ModelScope](https://www.modelscope.cn/models/Tonycreate1/ReMoT_model)
+- 📂 **Dataset:** [ReMoT_data on ModelScope](https://www.modelscope.cn/datasets/Tonycreate1/ReMoT_data)
+
+------
+
+
 
 
 ## 📊 Dataset Description
