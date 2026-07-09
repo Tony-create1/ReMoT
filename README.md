@@ -1,4 +1,4 @@
-# ReMoT: Reinforcement Learning with Motion Contrast Triplets
+# CVPR2026 Highlight ReMoT: Reinforcement Learning with Motion Contrast Triplets
 
 This repository provides the **dataset**, **model**, and **evaluation code** accompanying our paper:
 
